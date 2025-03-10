@@ -2,7 +2,8 @@
 
 Since Elementum supports client-server mode, you can run Elementum in Docker either to offload processing from weak device or to use unsupported OS (like Xbox or iOS or tvOS). You even can use normally incompatible OSes as client and server, e.g. Windows and Linux.
 
-Note: you also can run Elementun as Linux daemon or Windows service - take a look into how elementum binary is run in [Dockerfile](Dockerfile) and [docker-compose.yml](docker-compose.yml). If you will do that - then please share your configs (e.g. systemd unit) so we can add them to git repository.
+> [!TIP]
+> You also can run Elementun as Linux daemon or Windows service - take a look into how elementum binary is run in [Dockerfile](Dockerfile) and [docker-compose.yml](docker-compose.yml). If you will do that - then please share your configs (e.g. systemd unit) so we can add them to git repository.
 
 The full conversation about client-server mode can be found [here](https://github.com/elgatito/plugin.video.elementum/issues/2).
 
