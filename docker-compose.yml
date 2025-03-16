@@ -25,8 +25,10 @@ services:
       #- -remotePort=${REMOTE_PORT}
       #- -localHost=${LOCAL_IP}
       #- -localPort=${LOCAL_PORT}
-      #- -listenInterfaces=${LIBTORRENT_LISTEN_INTERFACES}
-      #- -outgoingInterfaces=${LIBTORRENT_OUTGOING_INTERFACES}
+      #- -listenInterfaces=${LIBTORRENT_LISTEN_INTERFACE1}
+      #- -listenInterfaces=${LIBTORRENT_LISTEN_INTERFACE2}
+      #- -outgoingInterfaces=${LIBTORRENT_OUTGOING_INTERFACE1}
+      #- -outgoingInterfaces=${LIBTORRENT_OUTGOING_INTERFACE2}
       #- -localLogin=${ELEMENTUM_LOGIN}
       #- -localPassword=${ELEMENTUM_PASSWORD}
       # For Windows and maybe macOS uncomment:
