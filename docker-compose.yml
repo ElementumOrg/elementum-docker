@@ -25,6 +25,7 @@ services:
       #- -remotePort=${REMOTE_PORT}
       #- -localHost=${LOCAL_IP}
       #- -localPort=${LOCAL_PORT}
+      #- -librarySubstitutions="${LIBRARY_SUBSTITUTION1}"
       #- -listenInterfaces=${LIBTORRENT_LISTEN_INTERFACE1}
       #- -listenInterfaces=${LIBTORRENT_LISTEN_INTERFACE2}
       #- -outgoingInterfaces=${LIBTORRENT_OUTGOING_INTERFACE1}
