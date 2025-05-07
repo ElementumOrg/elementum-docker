@@ -43,12 +43,12 @@ The full conversation about client-server mode can be found [here](https://githu
 
 ## Library usage
 
-If you want to setup library - you can share server-side (server with Docker) `ELEMENTUM_DATA/elementum_library/` directory with Kodi (via SMB or NFS, for example) or you can share client-side (Kodi) directory with server, add `Movies` and `Shows` sub-directories to Kodi as sources (the same like you do in a regular setup) and enable library sync in Elementum via `DISABLE_LIBRARY_SYNC=false`.
+If you want to setup library - you can share server-side (server with Docker) `ELEMENTUM_DATA/elementum_library/` directory with Kodi (via SMB or NFS, for example) or you can share client-side (Kodi) directory with server, add `Movies` and `Shows` sub-directories to Kodi as sources (the same way like you do in a regular setup) and enable library sync in Elementum via `DISABLE_LIBRARY_SYNC=false`.
 
 Kodi Library path in Docker and Client will be different - thus you should define substitutions for library path in format 'client_library_path|server_library_path' via `LIBRARY_SUBSTITUTION1`. You can use OS-specific paths (e.g. `C:\Kodi\Library|/home/ubuntu/elementum_data/elementum_library`, for example) in this substitution, Elementum will understand them.
 
 > [!NOTE]
-> This functionality was not thoroughly tested, so please create Issue or PR if you find issues.
+> This functionality was not thoroughly tested, so please create Issue or PR in plugin.video.elementum repo if you find issues.
 
 ## Supported OSes
 
