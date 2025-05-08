@@ -12,7 +12,7 @@ services:
       - "TZ=${TZ}"
     # Preferred network driver
     network_mode: "host"
-    # If you can't use "host" driver then uncomment this and other LOCAL_PORT lines:
+    # If you can't use "host" driver then uncomment "network_mode" and "ports" lines below and LOCAL_PORT= in .env file and -localPort= in "command" below
     #network_mode: "bridge"
     #ports:
     #  - "${LOCAL_PORT}:${LOCAL_PORT}"
