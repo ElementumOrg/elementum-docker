@@ -32,6 +32,6 @@ services:
       #- -outgoingInterfaces=${LIBTORRENT_OUTGOING_INTERFACE2}
       #- -localLogin=${ELEMENTUM_LOGIN}
       #- -localPassword=${ELEMENTUM_PASSWORD}
-      # For Windows and maybe macOS uncomment:
+      # IMPORTANT: For Windows and macOS (as docker host) uncomment:
       #- -serverExternalIp=${SERVER_EXTERNAL_IP}
     restart: unless-stopped
