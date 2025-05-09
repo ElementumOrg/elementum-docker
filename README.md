@@ -1,9 +1,9 @@
 # Docker image and docker-compose service for Elementum
 
-Since Elementum supports client-server mode, you can run Elementum in Docker either to offload processing from weak device or to use unsupported OS (like Xbox or iOS or tvOS). You even can use normally incompatible OSes as client and server, e.g. Windows and Linux.
+Since Elementum supports client-server mode, you can run Elementum in Docker either to offload processing from weak device or to use unsupported OS (like [Xbox](https://github.com/elgatito/plugin.video.elementum/issues/1117) or iOS or tvOS). You even can use normally incompatible OSes as client and server, e.g. Windows and Linux.
 
 > [!TIP]
-> You also can run Elementun as Linux daemon or Windows service - take a look into how `elementum` binary is run in [Dockerfile](Dockerfile) and [docker-compose.yml](docker-compose.yml). If you will do that - then please share your configs (e.g. systemd unit) so we can add them to git repository.
+> You also can run Elementun as Linux daemon or Windows service (without docker) - take a look into how `elementum` binary is run in [Dockerfile](Dockerfile) and [docker-compose.yml](docker-compose.yml). If you will do that - then please share your configs (e.g. systemd unit) so we can add them to git repository.
 
 The full conversation about client-server mode can be found [here](https://github.com/elgatito/plugin.video.elementum/issues/2).
 
@@ -59,7 +59,7 @@ Looks like in Windows Docker Desktop "bridge" and "host" network drivers (in WSL
 Thus, you must use special `-serverExternalIp=` parameter so Elementum will use this IP in replies and will not try to identify Kodi's IP based on client's IP (`-remoteHost=` value always will be used as Kodi's IP). You will not be able to use several clients with 1 server, obviously.
 Windows host as server with Docker Desktop was tested with Windows/Android host as Kodi client.
 
-I have not tested this "docker compose" service with macOS. Most likely it either behaves like Windows (so you will need to add `-serverExternalIp=` parameter) or like Linux.
+User tested this "docker compose" service with macOS as server and Xbox as client. macOS behaves like Windows (same NAT issue), so you need to add `-serverExternalIp=` parameter. Both "bridge" and "host" network drivers should work.
 
 ## Troubleshooting
 
