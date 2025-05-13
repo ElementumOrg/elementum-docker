@@ -52,14 +52,14 @@ Kodi Library path in Docker and Client will be different - thus you should defin
 
 ## Supported OSes
 
-This "docker compose" service was tested on Linux host as Docker server (using Docker Engine) and Linux/Windows/Android host as Kodi client.
+This "docker compose" service was tested on **Linux** host as Docker server (using Docker Engine) and **Linux/Windows/Android** host as Kodi client.
 You can use several clients with 1 server.
 
 Looks like in Windows Docker Desktop "bridge" and "host" network drivers (in WSL and Hyper-V mode) work as NAT behind the scene, so Elementum can't identify Kodi's IP based on request IP since Elementum sees IP of NAT gateway but not real client IP (unlike with Linux Docker Engine). Also Elementum will use internal IP in replies to client and client will not be able to connect to that internal IP.
 Thus, you must use special `-serverExternalIp=` parameter so Elementum will use this IP in replies and will not try to identify Kodi's IP based on client's IP (`-remoteHost=` value always will be used as Kodi's IP). You will not be able to use several clients with 1 server, obviously. If you have issues with "host" mode - then use "bridge" mode.
-Windows host as server with Docker Desktop was tested with Windows/Android host as Kodi client.
+**Windows** host as server with Docker Desktop was tested with **Windows/Android** host as Kodi client.
 
-[User tested](https://github.com/elgatito/plugin.video.elementum/issues/1117#issuecomment-2875906706) this "docker compose" service with macOS as server and Xbox as client. macOS behaves like Windows (same NAT issue), so you need to add `-serverExternalIp=` parameter. And container works only with "bridge" network driver.
+[User tested](https://github.com/elgatito/plugin.video.elementum/issues/1117#issuecomment-2875906706) this "docker compose" service with **macOS** as server and **Xbox** as client. macOS behaves like Windows (same NAT issue), so you need to add `-serverExternalIp=` parameter. And container works only with "bridge" network driver.
 
 ## Troubleshooting
 
