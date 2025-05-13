@@ -10,9 +10,9 @@ services:
         ELEMENTUM_ARCH: ${ELEMENTUM_ARCH}
     environment:
       - "TZ=${TZ}"
-    # Preferred network driver
+    # Preferred network driver for Linux (also works in Windows, but as NAT, read README, so if you have issues - then use "bridge" mode)
     network_mode: "host"
-    # If you can't use "host" driver then uncomment "network_mode" and "ports" lines below and LOCAL_PORT= in .env file and -localPort= in "command" below
+    # If you can't use "host" driver (e.g. in macOS, read README) then uncomment "network_mode" and "ports" lines below and LOCAL_PORT= in .env file and -localPort= in "command" below
     #network_mode: "bridge"
     #ports:
     #  - "${LOCAL_PORT}:${LOCAL_PORT}"
