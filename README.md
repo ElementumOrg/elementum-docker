@@ -67,7 +67,7 @@ If you want to setup library - you can share server-side (server with Docker) `E
 Kodi Library path in Docker and Client will be different - thus you should define substitutions for library path in format 'client_library_path|server_library_path' via `LIBRARY_SUBSTITUTION1`. You can use OS-specific paths (e.g. `C:\Kodi\Library|/home/ubuntu/elementum_data/elementum_library`, for example) in this substitution, Elementum will understand them.
 
 > [!NOTE]
-> This functionality was not thoroughly tested, so please create Issue or PR in plugin.video.elementum repo if you find issues.
+> This functionality was not thoroughly tested, so please create Issue or PR in [plugin.video.elementum](https://github.com/elgatito/plugin.video.elementum) repo if you find issue with sync, and here if you find issue with configuration.
 
 ## Troubleshooting
 
