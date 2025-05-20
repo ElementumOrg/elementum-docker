@@ -56,7 +56,7 @@ Looks like in Windows Docker Desktop "bridge" and "host" network drivers (in WSL
 Thus, you must use special `-serverExternalIp=` parameter so Elementum will use this IP in replies and will not try to identify Kodi's IP based on client's IP (`-remoteHost=` value always will be used as Kodi's IP). You will not be able to use several clients with 1 server, obviously. If you have issues with "host" mode - then use "bridge" mode.
 
 ### macOS
-[User tested](https://github.com/elgatito/plugin.video.elementum/issues/1117#issuecomment-2875906706) this "docker compose" service with **macOS** as server and **Xbox** as client.
+[User tested](https://github.com/elgatito/plugin.video.elementum/issues/1117#issuecomment-2875906706) this "docker compose" service with **macOS** (x86_64 & arm64) as server and **Xbox** as client.
 
 macOS behaves like Windows (same NAT issue), so you need to add `-serverExternalIp=` parameter. And container works only with "bridge" network driver.
 
